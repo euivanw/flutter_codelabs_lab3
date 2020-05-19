@@ -1,16 +1,11 @@
-# flutter_codelabs_lab3
+# Escreva seu primeiro aplicativo Flutter para web
 
-Escreva seu primeiro aplicativo Flutter para web
+Este projeto contém o código fonte codelab [Write your first Flutter app on the web](https://flutter.dev/docs/get-started/codelab-web) que foi traduzido por mim e disponibilizado em [Escreva seu primeiro aplicativo Flutter para web](ivanwhm.gitbook.io/laboratorios-de-codigo-do-flutter/escreva-seu-primeiro-aplicativo-flutter-para-web/introducao).
 
-## Getting Started
+Todo o código foi adaptado para que você possa ter a melhor experiência em aprender Flutter sem a barreira do idioma Inglês.
 
-This project is a starting point for a Flutter application.
+Acompanhe todos os laboratórios de código Flutter traduzidos no endereço [https://ivanwhm.gitbook.io/laboratorios-de-codigo-do-flutter/](https://ivanwhm.gitbook.io/laboratorios-de-codigo-do-flutter/)
 
-A few resources to get you started if this is your first Flutter project:
+Feito com &hearts; por Ivan Wilhelm.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Codificado no [Visual Studio Code](https://code.visualstudio.com) da [Microsoft](https://www.microsoft.com.br)
