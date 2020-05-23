@@ -6,6 +6,8 @@ Todo o código foi adaptado para que você possa ter a melhor experiência em ap
 
 Acompanhe todos os laboratórios de código Flutter traduzidos no endereço [https://ivanwhm.gitbook.io/laboratorios-de-codigo-do-flutter/](https://ivanwhm.gitbook.io/laboratorios-de-codigo-do-flutter/)
 
+<img src="./assets/lab3_final.gif" alt="iOS" width="400"/>
+
 Feito com &hearts; por Ivan Wilhelm.
 
 Codificado no [Visual Studio Code](https://code.visualstudio.com) da [Microsoft](https://www.microsoft.com.br)
