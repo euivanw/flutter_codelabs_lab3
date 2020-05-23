@@ -60,6 +60,7 @@ class _FormularioLoginState extends State<FormularioLogin> {
   @override
   Widget build(BuildContext context) {
     return Form(
+      onChanged: () => _atualizaProgressoFormulario(),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -100,7 +101,7 @@ class _FormularioLoginState extends State<FormularioLogin> {
           FlatButton(
             color: Colors.blue,
             textColor: Colors.white,
-            onPressed: _mostrarTelaBoasVindas,
+            onPressed: _progressoFormulario == 1 ? _mostrarTelaBoasVindas : null,
             child: Text('Acessar'),
           ),
         ],
@@ -110,5 +111,24 @@ class _FormularioLoginState extends State<FormularioLogin> {
 
   void _mostrarTelaBoasVindas() {
     Navigator.of(context).pushNamed('/bemvindo');
+  }
+
+  void _atualizaProgressoFormulario() {
+    var progresso = 0.0;
+    var controles = [
+      _primeiroNomeTextController,
+      _sobrenomeTextController,
+      _nomeDeUsuarioTextController,
+    ];
+
+    for (var controller in controles) {
+      if (controller.value.text.isNotEmpty) {
+        progresso += 1 / controles.length;
+      }
+    }
+
+    setState(() {
+      _progressoFormulario = progresso;
+    });
   }
 }
