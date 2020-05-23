@@ -8,6 +8,7 @@ class LoginApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         '/': (context) => LoginTela(),
+        '/bemvindo': (context) => BoasVindasTela(),
       },
     );
   }
@@ -24,6 +25,20 @@ class LoginTela extends StatelessWidget {
           child: Card(
             child: FormularioLogin(),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class BoasVindasTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text(
+          'Bem-vinda(o)!',
+          style: Theme.of(context).textTheme.headline2,
         ),
       ),
     );
@@ -85,11 +100,15 @@ class _FormularioLoginState extends State<FormularioLogin> {
           FlatButton(
             color: Colors.blue,
             textColor: Colors.white,
-            onPressed: null,
+            onPressed: _mostrarTelaBoasVindas,
             child: Text('Acessar'),
           ),
         ],
       ),
     );
+  }
+
+  void _mostrarTelaBoasVindas() {
+    Navigator.of(context).pushNamed('/bemvindo');
   }
 }
